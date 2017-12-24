@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  /* Step one: match the mock image background using the background svg */
+  background: #edeff0 url('svgs/background.svg') repeat;
+}
+
+/* Step two (b): When a user hovers over a nav menu item, 
+use CSS to change the color of both the text and the inline SVG */
+.nav__svg {
+width: auto;
+height: 15px;
+margin-right: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  fill: #39add1;
+  font-weight: 700;
+  /* Extra credit: Add a CSS transition effect to the menu icon hover state */
+  transition: all .5s;
+}
+
+a:hover {
+  color: #111;
+  fill: #111;
+}
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+  height: 100%; /* new line */
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+/* Step three (b): Ensure the logo SVG is styled to the same size as the mockup example
+(140px x 120px). */
+.logo {
+  width: 140px;
+  height: 120px;
+  transform-origin: 50% 50%;
+  transition: all 3s;
+}
+/* Extra credit: Add a CSS transition effect to the logo hover state  */
+.logo:hover {
+  transform: rotateY(360deg);
+}
+
+header {
+  padding-top: 10px;
+}
+
+header nav {
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+main {
+  padding-top: 50px;
+}
+
+main h2 {
+  font-size: 28px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+.corgi__collar {
+  margin-right: 10px;
+}
+
+.corgi__collar span {
+  display: block;
+  padding-right: 40px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.corgi__body--sable {
+  color: #B97F5B;
+}
+
+.corgi__body--fawn {
+  color: #E9AA82;
+}
+
+.corgi__body--red {
+  color: #834B29;
+}
+
+.corgi__body--stone {
+  color: #52595E;
+}
+
+.corgi__nose {
+  color: #2D3339;
+}
+
+.corgi__brows {
+  color: #D8805C;
+}
+
+.kennel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+span {
+  color: #ba8058
+}
+
+/* Step three (c): At a page width of less than 425 pixels, remove the text from the logo and add an H1 tag that contains the logo text */
+.logo__text {
+  visibility: hidden;
+  color: #EAAA7F;
+}
+@media (max-width: 425px) {
+  .st1 {
+    visibility: hidden;
+  }
+  .logo__text {
+    visibility: visible;
+  }
+
+}

@@ -136,16 +136,22 @@ span {
 }
 
 /* Step three (c): At a page width of less than 425 pixels, remove the text from the logo and add an H1 tag that contains the logo text */
-.logo__text {
+
+.st1 {
   visibility: hidden;
+}
+
+.logo__text {
+  visibility: visible;
   color: #EAAA7F;
 }
-@media (max-width: 425px) {
+
+@media (min-width: 425px) {
   .st1 {
-    visibility: hidden;
-  }
-  .logo__text {
     visibility: visible;
   }
 
+ .logo__text {
+   visibility: hidden;
+ }
 }
